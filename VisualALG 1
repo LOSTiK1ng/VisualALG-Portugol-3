@@ -1,0 +1,53 @@
+Algoritmo "semnome"
+
+
+Var
+v: vetor[1..10] de inteiro
+x:inteiro
+
+Inicio
+x <- 2
+      escreval("--------------------------------------------------------")
+      escreval("TABELA PARA MÉDIA DOS ALUNOS (PROFESSORES)")
+      escreval("A Primeira nota de Mariana:")
+      leia(v[1])
+      escreval("A Segunda nota de Mariana:")
+      leia(v[2])
+      escreval("--------------------------------------------------------")
+      escreval("A Primeira nota de Leonardo:")
+      leia(v[3])
+      escreval("A Segunda nota de Leonardo:")
+      leia(v[4])
+      escreval("--------------------------------------------------------")
+      escreval("A Primeira nota de João:")
+      leia(v[5])
+      escreval("A Segunda nota de João:")
+      leia(v[6])
+      escreval("--------------------------------------------------------")
+      escreval("A Primeira nota de Alvaro:")
+      leia(v[7])
+      escreval("A Segunda nota de Alvaro:")
+      leia(v[8])
+      escreval("--------------------------------------------------------")
+      escreval("A Primeira nota de Sonia:")
+      leia(v[9])
+      escreval("A Segunda nota de Sonia:")
+      leia(v[10])
+      escreval("--------------------------------------------------------")
+      limpatela
+x <- 2
+      escreval("--------------------------------------------------------")
+      escreval("RESULTADO DA PESQUISA - ALUNOS")
+      escreval("--------------------------------------------------------")
+      escreval("ALUNO     NOTE  01    NOTE  02     Média")
+      escreval("--------------------------------------------------------")
+      escreval("Mariana":27   v[1]:38   v[2]:51     (v[1]+v[2])/x)
+      escreval("--------------------------------------------------------")
+      escreval("Mariana":27   v[3]:38   v[4]:51     (v[3]+v[4])/x
+      escreval("--------------------------------------------------------")
+      escreval("Mariana":27   v[5]:38   v[6]:51     (v[5]+v[6])/x
+      escreval("--------------------------------------------------------")
+      escreval("Mariana":27   v[7]:38   v[8]:51     (v[7]+v[8])/x
+      escreval("--------------------------------------------------------")
+      escreval("Mariana":27   v[9]:38   v[10]:51     (v[9]+v[10])/x
+Fimalgoritmo
