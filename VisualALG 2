@@ -1,0 +1,49 @@
+algoritmo "media_tabela_simples"
+
+var
+  nomes: vetor[1..5] de caractere
+  notas: vetor[1..10] de inteiro
+  x: inteiro
+  m: real
+
+inicio
+  escreval("========================================================")
+  escreval("         TABELA PARA MÉDIA DOS ALUNOS (PROFESSORES)    ")
+  escreval("========================================================")
+
+  para x de 1 ate 5 faca
+    escreva("Nome do aluno ", x, ": ")
+    leia(nomes[x])
+    repita
+      escreva(" - Primeira nota (0 a 10): ")
+      leia(notas[(x-1)*2 + 1])
+      se (notas[(x-1)*2 + 1] < 0) ou (notas[(x-1)*2 + 1] > 10) entao
+        escreval("Nota inválida! Digite um valor entre 0 e 10.")
+      fimse
+    ate (notas[(x-1)*2 + 1] >= 0) e (notas[(x-1)*2 + 1] <= 10)
+    repita
+      escreva(" - Segunda nota (0 a 10): ")
+      leia(notas[(x-1)*2 + 2])
+      se (notas[(x-1)*2 + 2] < 0) ou (notas[(x-1)*2 + 2] > 10) entao
+        escreval("Nota inválida! Digite um valor entre 0 e 10.")
+      fimse
+    ate (notas[(x-1)*2 + 2] >= 0) e (notas[(x-1)*2 + 2] <= 10)
+
+    escreval("--------------------------------------------------------")
+  fimpara
+
+  limpatela
+
+  escreval("========================================================")
+  escreval("               RESULTADO FINAL DAS MÉDIAS               ")
+  escreval("========================================================")
+  escreval("ALUNO":15,"  NOTA 01":15,"  NOTA 02":15," MÉDIA":15)
+  escreval("--------------------------------------------------------")
+  para x de 1 ate 5 faca
+    m <- (notas[(x-1)*2 + 1] + notas[(x-1)*2 + 2]) / 2
+    escreval(nomes[x]:10, notas[(x-1)*2 + 1]:10, notas[(x-1)*2 + 2]:15, m:15:2)
+  fimpara
+
+  escreval("========================================================")
+
+fimalgoritmo
